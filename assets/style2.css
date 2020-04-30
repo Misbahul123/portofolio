@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(36, 24, 34);
+    color: #FFFFFF;
+}
+
+#video-background{
+    position: relative;
+}
+video{
+    position: absolute;
+}
+#submit-from-button{
+    background-color: greenyellow;
+}

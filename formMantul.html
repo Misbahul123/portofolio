@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body>
+
+    <form>
+      <fieldset>
+        <legend>Contoh Form</legend>
+
+        <div>
+          <label>Nama: </label>
+          <input type="text" name="nama" />
+        </div>
+
+        <div>
+          <p>Jenis Kelamin:</p>
+          <input type="radio" name="jenis_kelamin" value="laki-laki" checked />
+          <label>Laki - Laki</label>
+          <input type="radio" name="jenis_kelamin" value="perempuan" />
+          <label>Perempuan</label>
+        </div>
+
+        <div>
+          <p>Bidang yang dikuasai:</p>
+          <checkbox type="checkbox" name="web" /> Web
+          <checkbox type="checkbox" name="mobile" /> Mobile
+          <checkbox type="checkbox" name="desk" /> Desktop
+        </div>
+
+        <div>
+          <p>Mobil:</p>
+          <select name="mobil">
+            <option value="Volvo">Volvo</option>
+            <option value="Mercedes">Mercedess</option>
+          </select>
+        </div>
+
+        <div>
+          <p>Ceritakan pengalaman anda:</p>
+          <areatext
+            rows="10"
+            cols="60"
+            name="pengalaman"
+          ></areatext>
+          <textarea placeholder="Tulis jawaban Anda di sini"></textarea>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  
+
+  </body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inline CSS</title>
+  <style>
+    .card {
+      margin-top: 10px;
+      box-shadow: 0px 2px 10px lightgrey;
+      padding-bottom: 10px;
+      width: 250px;
+      border-radius: 10px;
+      background: lightgrey;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    p {
+      background: white;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    .description {
+      margin: 5px;
+      border-radius: 10px;
+    }
+
+    #close-button {
+      position: absolute;
+      font-size: 22px;
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <span id="close-button">&#10006;</span>
+    <h1>Mr Snuggles</h1>
+    <div style="width: 100%">
+      <img width="100%"
+        src="https://skilvul-course-assets.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/cat.jpg" />
+      <div class="description">
+        <p>I like warm places.</p>
+        <p>If it fits, I sits.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .sticky {
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: yellow;
+        border: 2px solid blue;
+        color: red;
+      }
+      p.content {
+          height: 1000vh
+      }
+    </style>
+  </head>
+  <body>
+    <p>Cobalah scroll halaman website ini</p>
+
+    <div class="sticky">I am sticky!</div>
+
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+
+    </div>
+  </body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Pertamaku</title>
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://skilvul-course-assets.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/responsive-design-percentage-cat.jpeg"
+      alt="kucing"
+    />
+  </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        max-width: 800px;
+      }
+      .button-group {
+        display: flex;
+      }
+      button {
+        font-size: 25px;
+        width: 100%;
+      }
+      /* Pada File CSS */
+@media (max-width: 600px) {
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+    </style>
+  </head>
+
+  <body>
+    <h1>Cat Ltd.</h1>
+    <img
+      src="https://skilvul-course-assets.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/responsive-design-percentage-cat.jpeg"
+      width="100%"
+    />
+    <div class="button-group">
+      <button>Talk to Us</button>
+      <button>Download Syllabus</button>
+      <button>Be a Partner</button>
+      <button>Join Class</button>
+    </div>
+    <button id="dsemo">kklik gans</button>
+    <p id="demo">JavaScript HTML DOM</p>
+    <script>
+      let number1 = '10';
+let number2 = 3;
+
+// let findTheLogic = number1 == 2 || number2 === '3';
+
+let apaan = number1 == 10;
+let apaan2 = number2 ==='3';
+console.log(apaan); // Output: true
+console.log(apaan2); // Output: true
+
+let carName = 'Kijang';
+
+function displayCarName() {
+  let carName = 'Honda';
+
+  return 'Mobil ini bermerk ' + carName;
+}
+
+console.log(displayCarName());
+
+
+function ganjilGenap(platNomor) {
+  console.log(platNomor);
+    if (platNomor & 2) {
+      return "Genap"
+    }else{
+      return "Ganjil"
+
+    }
+}
+
+// // console.log(10%2);
+// let angka = [1, 46, 75, 12, 89, 54, 101]; let genap = [];
+
+// // Tulis kode kalian di bawah ini
+
+// for (let i = 1; i <= angka.length; i++) {
+//    if (angka[i] % 2 === 0) {
+//       // genap = angka[i]; 
+//       console.log(angka[i]); 
+//       } 
+//     }
+const bukus = {
+   judul: "Harry Potter and The Philosopher's Stone",
+   pengarang: "J. K. Rowling",
+   tahun: 1997
+};
+for (newBook in bukus) {
+  // console.log(newBook, ':', bukus[newBook]);
+  console.log(bukus[newBook])
+}
+
+let angka = [1, 46, 75, 12, 89, 54, 101];
+let ganjil = [];
+
+// Tulis kode kalian di bawah ini
+
+for (anka of angka){
+  if (anka % 2 == 1){
+    ganjil.push(anka);
+  }
+}
+
+let angkas = [];
+
+// Tulis kode kalian di bawah ini
+let i = 0;
+while( i <=5){
+ 
+  angkas.push(i);
+
+  i++
+  
+}
+angkas.reverse();
+
+// console.log(angkas);
+
+// let demo = document.getElementById("demo").onclick = showMessage;
+let demo = document.getElementById("demo");
+demo.onclick = showMessage;
+
+function showMessage() {
+   alert("Hello, World!");
+}
+document.getElementById('demo').setAttribute("style", "color: blue;");
+
+
+let nama = "huda";
+let umur = 19;
+
+let misbah = `namanya ${nama} umurnya ${umur}`
+console.log(misbah);
+
+
+function panggang(bahan = "makanannya", durasi = "yang diperlukan", suhu = "yang cocok") {
+  return `Panggang ${bahan} selama ${durasi} pada suhu ${suhu}`;
+}
+
+console.log(panggang("roti"));
+
+function test(...a) {
+  console.log(a);
+}
+
+test(1,2,3);
+
+let arrayBilangan = [1, 2, 3, 4, 5];
+
+console.log(arrayBilangan);
+console.log(...arrayBilangan);
+
+
+
+let namaBuah1 = ['apel', 'mangga'];
+let namaBuah2 = ['sirsak', 'semangka'];
+console.log(...namaBuah1);
+console.log(...namaBuah2);
+let semuaNamaBuah = [...namaBuah1,...namaBuah2];
+
+
+console.log(semuaNamaBuah);
+// Tulis kode kalian di bawah ini
+    </script>
+  </body>
+</html> -->
